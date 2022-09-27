@@ -4,185 +4,152 @@
 #include "echo_service.pb.h"
 
 #include <algorithm>
-#include "google/protobuf/io/coded_stream.h"
-#include "google/protobuf/extension_set.h"
-#include "google/protobuf/wire_format_lite.h"
-#include "google/protobuf/descriptor.h"
-#include "google/protobuf/generated_message_reflection.h"
-#include "google/protobuf/reflection_ops.h"
-#include "google/protobuf/wire_format.h"
-// @@protoc_insertion_point(includes)
 
-// Must be included last.
-#include "google/protobuf/port_def.inc"
+#include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
+#include <google/protobuf/wire_format_lite.h>
+#include <google/protobuf/descriptor.h>
+#include <google/protobuf/generated_message_reflection.h>
+#include <google/protobuf/reflection_ops.h>
+#include <google/protobuf/wire_format.h>
+// @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
+
 PROTOBUF_PRAGMA_INIT_SEG
+
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
-namespace _pbi = ::PROTOBUF_NAMESPACE_ID::internal;
+namespace _pbi = _pb::internal;
+
 namespace pb {
 PROTOBUF_CONSTEXPR EchoRequest::EchoRequest(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.message_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct EchoRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR EchoRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR EchoRequestDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~EchoRequestDefaultTypeInternal() {}
   union {
     EchoRequest _instance;
   };
 };
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 EchoRequestDefaultTypeInternal _EchoRequest_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 EchoRequestDefaultTypeInternal _EchoRequest_default_instance_;
 PROTOBUF_CONSTEXPR EchoResponse::EchoResponse(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.message_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct EchoResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR EchoResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR EchoResponseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~EchoResponseDefaultTypeInternal() {}
   union {
     EchoResponse _instance;
   };
 };
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 EchoResponseDefaultTypeInternal _EchoResponse_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 EchoResponseDefaultTypeInternal _EchoResponse_default_instance_;
 PROTOBUF_CONSTEXPR AddRequest::AddRequest(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.a_)*/0
   , /*decltype(_impl_.b_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct AddRequestDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR AddRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AddRequestDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AddRequestDefaultTypeInternal() {}
   union {
     AddRequest _instance;
   };
 };
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AddRequestDefaultTypeInternal _AddRequest_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AddRequestDefaultTypeInternal _AddRequest_default_instance_;
 PROTOBUF_CONSTEXPR AddResponse::AddResponse(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.result_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct AddResponseDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR AddResponseDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AddResponseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AddResponseDefaultTypeInternal() {}
   union {
     AddResponse _instance;
   };
 };
-
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
-    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AddResponseDefaultTypeInternal _AddResponse_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AddResponseDefaultTypeInternal _AddResponse_default_instance_;
 }  // namespace pb
 static ::_pb::Metadata file_level_metadata_echo_5fservice_2eproto[4];
-static constexpr const ::_pb::EnumDescriptor**
-    file_level_enum_descriptors_echo_5fservice_2eproto = nullptr;
-static constexpr const ::_pb::ServiceDescriptor**
-    file_level_service_descriptors_echo_5fservice_2eproto = nullptr;
-const uint32_t TableStruct_echo_5fservice_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(
-    protodesc_cold) = {
-    ~0u,  // no _has_bits_
-    PROTOBUF_FIELD_OFFSET(::pb::EchoRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    ~0u,  // no _weak_field_map_
-    ~0u,  // no _inlined_string_donated_
-    ~0u,  // no _split_
-    ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::pb::EchoRequest, _impl_.message_),
-    ~0u,  // no _has_bits_
-    PROTOBUF_FIELD_OFFSET(::pb::EchoResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    ~0u,  // no _weak_field_map_
-    ~0u,  // no _inlined_string_donated_
-    ~0u,  // no _split_
-    ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::pb::EchoResponse, _impl_.message_),
-    ~0u,  // no _has_bits_
-    PROTOBUF_FIELD_OFFSET(::pb::AddRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    ~0u,  // no _weak_field_map_
-    ~0u,  // no _inlined_string_donated_
-    ~0u,  // no _split_
-    ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::pb::AddRequest, _impl_.a_),
-    PROTOBUF_FIELD_OFFSET(::pb::AddRequest, _impl_.b_),
-    ~0u,  // no _has_bits_
-    PROTOBUF_FIELD_OFFSET(::pb::AddResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    ~0u,  // no _weak_field_map_
-    ~0u,  // no _inlined_string_donated_
-    ~0u,  // no _split_
-    ~0u,  // no sizeof(Split)
-    PROTOBUF_FIELD_OFFSET(::pb::AddResponse, _impl_.result_),
-};
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_echo_5fservice_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_echo_5fservice_2eproto = nullptr;
 
-static const ::_pbi::MigrationSchema
-    schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-        { 0, -1, -1, sizeof(::pb::EchoRequest)},
-        { 9, -1, -1, sizeof(::pb::EchoResponse)},
-        { 18, -1, -1, sizeof(::pb::AddRequest)},
-        { 28, -1, -1, sizeof(::pb::AddResponse)},
+const uint32_t TableStruct_echo_5fservice_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::pb::EchoRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::pb::EchoRequest, _impl_.message_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::pb::EchoResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::pb::EchoResponse, _impl_.message_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::pb::AddRequest, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::pb::AddRequest, _impl_.a_),
+  PROTOBUF_FIELD_OFFSET(::pb::AddRequest, _impl_.b_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::pb::AddResponse, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::pb::AddResponse, _impl_.result_),
+};
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::pb::EchoRequest)},
+  { 7, -1, -1, sizeof(::pb::EchoResponse)},
+  { 14, -1, -1, sizeof(::pb::AddRequest)},
+  { 22, -1, -1, sizeof(::pb::AddResponse)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-    &::pb::_EchoRequest_default_instance_._instance,
-    &::pb::_EchoResponse_default_instance_._instance,
-    &::pb::_AddRequest_default_instance_._instance,
-    &::pb::_AddResponse_default_instance_._instance,
-};
-const char descriptor_table_protodef_echo_5fservice_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-    "\n\022echo_service.proto\022\002pb\"\036\n\013EchoRequest\022"
-    "\017\n\007message\030\001 \001(\t\"\037\n\014EchoResponse\022\017\n\007mess"
-    "age\030\001 \001(\t\"\"\n\nAddRequest\022\t\n\001a\030\001 \001(\005\022\t\n\001b\030"
-    "\002 \001(\005\"\035\n\013AddResponse\022\016\n\006result\030\001 \001(\0052`\n\013"
-    "EchoService\022)\n\004Echo\022\017.pb.EchoRequest\032\020.p"
-    "b.EchoResponse\022&\n\003Add\022\016.pb.AddRequest\032\017."
-    "pb.AddResponseb\006proto3"
-};
-static ::absl::once_flag descriptor_table_echo_5fservice_2eproto_once;
-const ::_pbi::DescriptorTable descriptor_table_echo_5fservice_2eproto = {
-    false,
-    false,
-    262,
-    descriptor_table_protodef_echo_5fservice_2eproto,
-    "echo_service.proto",
-    &descriptor_table_echo_5fservice_2eproto_once,
-    nullptr,
-    0,
-    4,
-    schemas,
-    file_default_instances,
-    TableStruct_echo_5fservice_2eproto::offsets,
-    file_level_metadata_echo_5fservice_2eproto,
-    file_level_enum_descriptors_echo_5fservice_2eproto,
-    file_level_service_descriptors_echo_5fservice_2eproto,
+  &::pb::_EchoRequest_default_instance_._instance,
+  &::pb::_EchoResponse_default_instance_._instance,
+  &::pb::_AddRequest_default_instance_._instance,
+  &::pb::_AddResponse_default_instance_._instance,
 };
 
-// This function exists to be marked as weak.
-// It can significantly speed up compilation by breaking up LLVM's SCC
-// in the .pb.cc translation units. Large translation units see a
-// reduction of more than 35% of walltime for optimized builds. Without
-// the weak attribute all the messages in the file, including all the
-// vtables and everything they use become part of the same SCC through
-// a cycle like:
-// GetMetadata -> descriptor table -> default instances ->
-//   vtables -> GetMetadata
-// By adding a weak function here we break the connection from the
-// individual vtables back into the descriptor table.
+const char descriptor_table_protodef_echo_5fservice_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
+  "\n\022echo_service.proto\022\002pb\"\036\n\013EchoRequest\022"
+  "\017\n\007message\030\001 \001(\t\"\037\n\014EchoResponse\022\017\n\007mess"
+  "age\030\001 \001(\t\"\"\n\nAddRequest\022\t\n\001a\030\001 \001(\005\022\t\n\001b\030"
+  "\002 \001(\005\"\035\n\013AddResponse\022\016\n\006result\030\001 \001(\0052`\n\013"
+  "EchoService\022)\n\004Echo\022\017.pb.EchoRequest\032\020.p"
+  "b.EchoResponse\022&\n\003Add\022\016.pb.AddRequest\032\017."
+  "pb.AddResponseb\006proto3"
+  ;
+static ::_pbi::once_flag descriptor_table_echo_5fservice_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_echo_5fservice_2eproto = {
+    false, false, 262, descriptor_table_protodef_echo_5fservice_2eproto,
+    "echo_service.proto",
+    &descriptor_table_echo_5fservice_2eproto_once, nullptr, 0, 4,
+    schemas, file_default_instances, TableStruct_echo_5fservice_2eproto::offsets,
+    file_level_metadata_echo_5fservice_2eproto, file_level_enum_descriptors_echo_5fservice_2eproto,
+    file_level_service_descriptors_echo_5fservice_2eproto,
+};
 PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_echo_5fservice_2eproto_getter() {
   return &descriptor_table_echo_5fservice_2eproto;
 }
+
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY2
-static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_echo_5fservice_2eproto(&descriptor_table_echo_5fservice_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_echo_5fservice_2eproto(&descriptor_table_echo_5fservice_2eproto);
 namespace pb {
+
 // ===================================================================
 
 class EchoRequest::_Internal {
@@ -385,6 +352,7 @@ void EchoRequest::InternalSwap(EchoRequest* other) {
       &descriptor_table_echo_5fservice_2eproto_getter, &descriptor_table_echo_5fservice_2eproto_once,
       file_level_metadata_echo_5fservice_2eproto[0]);
 }
+
 // ===================================================================
 
 class EchoResponse::_Internal {
@@ -587,6 +555,7 @@ void EchoResponse::InternalSwap(EchoResponse* other) {
       &descriptor_table_echo_5fservice_2eproto_getter, &descriptor_table_echo_5fservice_2eproto_once,
       file_level_metadata_echo_5fservice_2eproto[1]);
 }
+
 // ===================================================================
 
 class AddRequest::_Internal {
@@ -797,6 +766,7 @@ void AddRequest::InternalSwap(AddRequest* other) {
       &descriptor_table_echo_5fservice_2eproto_getter, &descriptor_table_echo_5fservice_2eproto_once,
       file_level_metadata_echo_5fservice_2eproto[2]);
 }
+
 // ===================================================================
 
 class AddResponse::_Internal {
@@ -974,6 +944,7 @@ void AddResponse::InternalSwap(AddResponse* other) {
       &descriptor_table_echo_5fservice_2eproto_getter, &descriptor_table_echo_5fservice_2eproto_once,
       file_level_metadata_echo_5fservice_2eproto[3]);
 }
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace pb
 PROTOBUF_NAMESPACE_OPEN
@@ -994,5 +965,6 @@ Arena::CreateMaybeMessage< ::pb::AddResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::pb::AddResponse >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
+
 // @@protoc_insertion_point(global_scope)
-#include "google/protobuf/port_undef.inc"
+#include <google/protobuf/port_undef.inc>

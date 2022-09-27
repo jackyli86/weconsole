@@ -9,7 +9,9 @@ TEST(TEST_GOOGLE, TEST_GOOGLE_PROTOBUF) {
 
 	cout << "size_long = " << request.ByteSizeLong() << endl;
 
-	char* pszBuf = new char(request.ByteSizeLong() + 1);
+	char* pBuf = new char(100);
+
+	char* pszBuf = (char*)malloc(request.ByteSizeLong() + 1);
 	memset(pszBuf, 0, request.ByteSizeLong() + 1);
 	EXPECT_TRUE(request.SerializeToArray(pszBuf, request.ByteSizeLong() + 1));
 
@@ -19,4 +21,6 @@ TEST(TEST_GOOGLE, TEST_GOOGLE_PROTOBUF) {
 
 	cout <<"[" << request1.SerializeAsString() << "]" << endl;
 	EXPECT_EQ(request.message(), request1.message());
+
+	free(pszBuf);
 }
